@@ -17,10 +17,79 @@
     <h1>Community Service Finder</h1>
 
  <div id = 'map'> </div>
-   
+
+ <div class="container">
+    <form >        
+      <label for="eventName">Event Name</label>
+      <input type="text" id="eventName" name="eventName" placeholder="Event name..">
+  
+      <label for="lat">Latitude</label>
+      <input type="number" id="lat" name="lat" placeholder="Location Latitude..." step="any">
+
+      <label for="lng">Longitude</label>
+      <input type="number" id="lng" name="lng" placeholder="Location Longitude..." step="any">
+      <br><br>
+     
+      <label for = 'email'>Email</label>
+      <input type = 'text' id ='email' name = 'email' placeholder="Your email...">
+     
+      <label for = 'phone'>Phone Number</label>
+      <input type = 'text' id ='phone' name = 'phone' placeholder="Your Phone Number...">
+
+      <label for = 'sTime'>Event Start Time</label>
+      <input type = 'text' id ='sTime' name = 'sTime' placeholder="Event Start Time...">
+
+      <label for="sAMPM">Start Time AM or PM</label>
+      <select id="sAMPM" name="sAMPM">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+
+      <label for = 'eTime'>Event End Time</label>
+      <input type = 'text' id ='eTime' name = 'eTime' placeholder="Event End Time...">
+
+      <label for="eAMPM">End Time AM or PM</label>
+      <select id="eAMPM" name="eAMPM">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+      
+      <label for="description">Description</label>
+      <textarea id="description" name="description" placeholder="Type your description here..." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit" id = 'submitButton'>
+      <p id = 'eS'>Event Submitted!</p>
+  
+    </form>
+  </div>
+  
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAsASaTZwHfIhJAYGC1KwsoisaCsxx5eJw",
+    authDomain: "communityservice-285518.firebaseapp.com",
+    databaseURL: "https://communityservice-285518.firebaseio.com",
+    projectId: "communityservice-285518",
+    storageBucket: "communityservice-285518.appspot.com",
+    messagingSenderId: "731117253966",
+    appId: "1:731117253966:web:289506384e6da24ac41a1f",
+    measurementId: "G-MQLF5K4ZD7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsASaTZwHfIhJAYGC1KwsoisaCsxx5eJw&callback=initMap&libraries=&v=weekly"
     defer
   ></script>
+  
 </body>
 </html>
