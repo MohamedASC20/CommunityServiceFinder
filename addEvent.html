@@ -14,28 +14,47 @@
    
         </div>
 
-        <div class="container">
-            <form >        
-              <label for="eventName">Event Name</label>
-              <input type="text" id="eventName" name="eventName" placeholder="Event name..">
+        <div class="homeContainer">
+          <form>
+          <label for="eventName">Event Name</label><br>
+          <input type="text" id="eventName" name="eventName" placeholder="Event name.." style="width: 50%;"> <br>
+      
+          <label for="lat">Latitude</label>
+          <input type="number" id="lat" name="lat" placeholder="Location Latitude..." step="any" >
+          <label for="lng">Longitude</label>
+          <input type="number" id="lng" name="lng" placeholder="Location Longitude..." step="any">
+          <br><br>
+         
+          <label for = 'email'>Email</label><br>
+          <input type = 'text' id ='email' name = 'email' placeholder="Your email..." style="width: 50%;"><br>
+         
+          <label for = 'phone'>Phone Number</label><br>
+          <input type = 'text' id ='phone' name = 'phone' placeholder="Your Phone Number..." style="width: 50%;"><br>
+    
+          <label for = 'sTime'>Event Start Time</label><br>
+          <input type = 'text' id ='sTime' name = 'sTime' placeholder="Event Start Time..." style="width: 50%;"><br>
+    
+          <label for="sAMPM" >Start Time AM or PM</label><br>
+          <select id="sAMPM" name="sAMPM"  style="width: 50%;"><br>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select><br>
+    
+          <label for = 'eTime'>Event End Time</label><br>
+          <input type = 'text' id ='eTime' name = 'eTime' placeholder="Event End Time..." style="width: 50%;"><br>
+    
+          <label for="eAMPM">End Time AM or PM</label><br>
+          <select id="eAMPM" name="eAMPM" style="width: 50%;">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select><br>
           
-              <label for="lat">Latitude</label>
-              <input type="text" id="lat" name="lat" placeholder="Location Latitude...">
-
-              <label for="lng">Longitude</label>
-              <input type="text" id="lng" name="lng" placeholder="Location Longitude...">
-          
-              <label for = 'email'>Email</label>
-              <input type = 'text' id ='email' name = 'email' placeholder="Your email...">
-
-
-              <label for="description">Description</label>
-              <textarea id="description" name="description" placeholder="Type your description here..." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit" id = 'submitButton'>
-              <p id = 'eS'>Event Submitted!</p>
-          
-            </form>
+          <label for="description">Description</label><br>
+          <textarea id="description" name="description" placeholder="Type your description here..."  style="width: 50% ;height:200px" ></textarea>
+      
+          <input type="submit" value="Submit" id = 'submitButton'>
+          <p id = 'eS'>Event Submitted!</p>
+          </form>
           </div>
 </body>
 </html>

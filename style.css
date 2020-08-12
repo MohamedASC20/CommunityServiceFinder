@@ -1,30 +1,35 @@
 body{
-    background-color: black;
-   color: white;
+  
+   color: black;
+   justify-content: center;
 }
 
 
 #map{
-    width: 50%;
-    height: 400px;
+  margin-left: 12.5%;
+    width: 75%;
+    height: 600px;
     color: black;
 
 }
 .tabs{
     display: flex;
-    background-color: black;
+    background-color:white;
     color: white;
     font-size: 50px;
   
     border-radius: 10px;
     border: solid;
-    border-color: blue;
+    border-color: #45a049;
 }
 
 .navTab {
-  
+  color: #45a049;
     margin-right: auto;
     margin-left: auto;
+}
+.navTab:visited{
+  color: #45a049;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -55,8 +60,67 @@ input[type=text], select, textarea {
   }
   
   /* Add a background color and some padding around the form */
+  
   .container {
-    border-radius: 5px;
+    background-image: url('images/welcomeCS.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    place-content: center center;
+    flex-direction: column;
     
-    padding: 20px;
+  }
+  
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;}
+
+  #sweep{
+    height: 200px;
+    width: 450px;
+    left: 5px;
+  }
+
+  #nameContainer {
+    text-align: center;
+    font-size: 60px;
+  
+    justify-content: center;
+  }
+  #serve{
+    font-size: 72px;
+    color: rgb(39, 98, 14);
+  }
+
+  #next{
+    margin-left: 43%;
+    text-align: center;
+    font-size: 60px;
+    width: 350px;
+    background-color: white;
+    color: green;
+    text-decoration: none;
+    
+  }
+
+  #next:hover{
+    font-size: 65px;
+  }
+
+  #mapDiv{
+    color: white;
+    background-color: black;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
+
+  #headS{
+    color: green
+  }
+  #veHead{
+    color: green;
   }
