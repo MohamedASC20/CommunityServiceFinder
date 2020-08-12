@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Service Finder</title>
+    <link rel = 'stylesheet' href="style.css">
+    <script src= 'script.js'></script>
+</head>
+<body>
+    <div class = 'tabs'>
+      <a href="index.html"> <img class = 'logo' src = 'images/csLogo.png' width="70px"></a>
+        <span class = 'navTab' ><a href="finder.html"> Finder</a></span>
+         <span class = 'navTab'> <a href="addEvent.html"> Add Event</a></span>
+         <span class = 'navTab'> <a href="logHours.html"> Log Hours</a></span>
+   
+        </div>
+        <div id = 'mapDiv'>
+    <h1>Find Places To <i><u id = 'headS'>SERVE</u></i></h1>
+    <span>
+      <img src = 'images/verifiedEventMarker1.png'> = Verified Events
+      <img src = 'images/unverifiedEventMarker1.png' width="50px" height="32px"> = Unverified Events
+
+    </span>
+
+ <div id = 'map'> </div>
+</div>
+ <div class="homeContainer">
+    <div id = 'verifiedEvents'>
+      <h1 id = 'veHead'><u><strong>Verified Events</strong></u></h1>
+      <h2><u>Tree Planting:</u></h2>
+      <h3>Start Time: 9AM<br>
+        End Time: 6PM<br>
+        Contact Email: shanyah.sam@gmail.com<br>
+        Contact Phone Number: 718-234-5729<br>
+        Description: Plant trees as a community</h3>
+        <h2><u>Food Drive:</u></h2>
+        <h3>Start Time: 11AM<br>
+          End Time: 3PM<br>
+          Contact Email: N/A<br>
+          Contact Phone Number: 646-632-4783<br>
+          Description: Donate canned goods to those in need</h3>
+          <h2><u> Justice March:</u></h2>
+          <h3>Start Time: 12PM<br>
+            End Time: 4PM<br>
+            Contact Email: iyana.davidson@gmail.com<br>
+            Contact Phone Number: 347-483-9024<br>
+            Description: Mach for Justice</h3>
+            <h2><u>Community Clean Up:</u></h2>
+            <h3>Start Time: 9AM<br>
+              End Time: 6PM<br>
+              Contact Email: nicole.bright@gmail.com<br>
+              Contact Phone Number: 347-678-1120<br>
+              Description: Clean the trash in your neighborhood</h3>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+   
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsASaTZwHfIhJAYGC1KwsoisaCsxx5eJw&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+  
+</body>
+</html>  
