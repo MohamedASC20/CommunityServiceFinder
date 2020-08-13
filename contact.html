@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href="style.css">
+</head>
+<body>
+    <div class = 'tabs'>
+        <a href="index.html"> <img class = 'logo' src = 'images/csLogo.png' width="70px"></a>
+          <span class = 'navTab' ><a href="finder.html"> Finder</a></span>
+           <span class = 'navTab'> <a href="addEvent.html"> Add Event</a></span>
+           <span class = 'navTab'> <a href="logHours.html"> Log Hours</a></span>
+           <span class = 'navTab'> <a href="contact.html"> Contact Us</a></span>
+     
+          </div>
+    <h1>Send Us A Message!</h1>
+    <div class="contactContainer">
+        <form >        
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="title">Title</label>
+          <select id="title" name="title">
+            <option value="Mr">Mr.</option>
+            <option value="Ms">Ms.</option>
+            <option value="Mrs">Mrs.</option>
+            <option value="Dr">Dr.</option>
+          </select>
+
+          <label for = 'email'>Email</label>
+          <input type = 'text' id ='email' name = 'email' placeholder="Your email">
+
+
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Type your message here..." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit" id = 'submitButton'>
+      
+      
+        </form>
+      </div>
+    
+    </div>
+<script src = 'script.js' defer></script>
+<footer>
+    <p class = 'footer'>2020, Mohamed Drame. All Rights Reserved. <br> Site by Mohamed Drame</p>
+</footer>
+</body>
+</html>
